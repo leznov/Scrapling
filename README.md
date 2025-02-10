@@ -16,47 +16,6 @@ Scrapling is a high-performance, intelligent web scraping library for Python tha
 >> products = page.css('.product', auto_match=True)  # and Scrapling still finds them!
 ```
 
-## Table of content
-  * [Key Features](#key-features)
-    * [Fetch websites as you prefer](#fetch-websites-as-you-prefer-with-async-support)
-    * [Adaptive Scraping](#adaptive-scraping)
-    * [Performance](#performance)
-    * [Developing Experience](#developing-experience)
-  * [Getting Started](#getting-started)
-  * [Parsing Performance](#parsing-performance)
-    * [Text Extraction Speed Test (5000 nested elements).](#text-extraction-speed-test-5000-nested-elements)
-    * [Extraction By Text Speed Test](#extraction-by-text-speed-test)
-  * [Installation](#installation)
-  * [Fetching Websites](#fetching-websites)
-    * [Features](#features)
-    * [Fetcher class](#fetcher)
-    * [StealthyFetcher class](#stealthyfetcher)
-    * [PlayWrightFetcher class](#playwrightfetcher)
-  * [Advanced Parsing Features](#advanced-parsing-features)
-    * [Smart Navigation](#smart-navigation)
-    * [Content-based Selection & Finding Similar Elements](#content-based-selection--finding-similar-elements)
-    * [Handling Structural Changes](#handling-structural-changes)
-      * [Real World Scenario](#real-world-scenario)
-    * [Find elements by filters](#find-elements-by-filters)
-    * [Is That All?](#is-that-all)
-  * [More Advanced Usage](#more-advanced-usage)
-  * [⚡ Enlightening Questions and FAQs](#-enlightening-questions-and-faqs)
-    * [How does auto-matching work?](#how-does-auto-matching-work)
-    * [How does the auto-matching work if I didn't pass a URL while initializing the Adaptor object?](#how-does-the-auto-matching-work-if-i-didnt-pass-a-url-while-initializing-the-adaptor-object)
-    * [If all things about an element can change or get removed, what are the unique properties to be saved?](#if-all-things-about-an-element-can-change-or-get-removed-what-are-the-unique-properties-to-be-saved)
-    * [I have enabled the `auto_save`/`auto_match` parameter while selecting and it got completely ignored with a warning message](#i-have-enabled-the-auto_saveauto_match-parameter-while-selecting-and-it-got-completely-ignored-with-a-warning-message)
-    * [I have done everything as the docs but the auto-matching didn't return anything, what's wrong?](#i-have-done-everything-as-the-docs-but-the-auto-matching-didnt-return-anything-whats-wrong)
-    * [Can Scrapling replace code built on top of BeautifulSoup4?](#can-scrapling-replace-code-built-on-top-of-beautifulsoup4)
-    * [Can Scrapling replace code built on top of AutoScraper?](#can-scrapling-replace-code-built-on-top-of-autoscraper)
-    * [Is Scrapling thread-safe?](#is-scrapling-thread-safe)
-  * [More Sponsors!](#more-sponsors)
-  * [Contributing](#contributing)
-  * [Disclaimer for Scrapling Project](#disclaimer-for-scrapling-project)
-  * [License](#license)
-  * [Acknowledgments](#acknowledgments)
-  * [Thanks and References](#thanks-and-references)
-  * [Known Issues](#known-issues)
-
 ## Key Features
 
 ### Fetch websites as you prefer with async support
