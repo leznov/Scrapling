@@ -622,11 +622,6 @@ There are a lot of deep details skipped here to make this as short as possible s
 
 Note that implementing your storage system can be complex as there are some strict rules such as inheriting from the same abstract class, following the singleton design pattern used in other classes, and more. So make sure to read the docs first.
 
-> [!IMPORTANT] 
-> A website is needed to provide detailed library documentation.<br/> 
-> I'm trying to rush creating the website, researching new ideas, and adding more features/tests/benchmarks but time is tight with too many spinning plates between work, personal life, and working on Scrapling. I have been working on Scrapling for months for free after all.<br/><br/>
-> If you like `Scrapling` and want it to keep improving then this is a friendly reminder that you can help by supporting me through the [sponsor button](https://github.com/sponsors/D4Vinci).
-
 ## ⚡ Enlightening Questions and FAQs
 This section addresses common questions about Scrapling, please read this section before opening an issue.
 
@@ -671,35 +666,5 @@ Of course, you can find elements by text/regex, find similar elements in a more 
 ### Is Scrapling thread-safe?
 Yes, Scrapling instances are thread-safe. Each Adaptor instance maintains its state.
 
-## More Sponsors!
-<a href="https://serpapi.com/?utm_source=scrapling"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/SerpApi.png" height="500" alt="SerpApi Banner" ></a>
-
-
-## Contributing
-Everybody is invited and welcome to contribute to Scrapling. There is a lot to do!
-
-Please read the [contributing file](https://github.com/D4Vinci/Scrapling/blob/main/CONTRIBUTING.md) before doing anything.
-
-## Disclaimer for Scrapling Project
-> [!CAUTION]
-> This library is provided for educational and research purposes only. By using this library, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This library should not be used to violate the rights of others, for unethical purposes, or to use data in an unauthorized or illegal manner. Do not use it on any website unless you have permission from the website owner or within their allowed rules like the `robots.txt` file, for example.
-
-## License
-This work is licensed under BSD-3
-
-## Acknowledgments
-This project includes code adapted from:
-- Parsel (BSD License) - Used for [translator](https://github.com/D4Vinci/Scrapling/blob/main/scrapling/translator.py) submodule
-
-## Thanks and References
-- [Daijro](https://github.com/daijro)'s brilliant work on both [BrowserForge](https://github.com/daijro/browserforge) and [Camoufox](https://github.com/daijro/camoufox)
-- [Vinyzu](https://github.com/Vinyzu)'s work on Playwright's mock on [Botright](https://github.com/Vinyzu/Botright)
-- [brotector](https://github.com/kaliiiiiiiiii/brotector)
-- [fakebrowser](https://github.com/kkoooqq/fakebrowser)
-- [rebrowser-patches](https://github.com/rebrowser/rebrowser-patches)
-
 ## Known Issues
 - In the auto-matching save process, the unique properties of the first element from the selection results are the only ones that get saved. So if the selector you are using selects different elements on the page that are in different locations, auto-matching will probably return to you the first element only when you relocate it later. This doesn't include combined CSS selectors (Using commas to combine more than one selector for example) as these selectors get separated and each selector gets executed alone.
-
----
-<div align="center"><small>Designed & crafted with ❤️ by Karim Shoair.</small></div><br>
